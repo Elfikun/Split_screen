@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,34 @@
     <title>Split on Scroll</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
     <section>
-    <div class="side" id="side1"><img src="img/Melbourne.jpg" alt="city"></div>
-    <div class="side" id="side2"><img src="img/Melbourne.jpg" alt="city"></div>
+        <div class="side" id="side1"><img src="img/Melbourne.jpg" alt="city"></div>
+        <div class="side" id="side2"><img src="img/Melbourne.jpg" alt="city"></div>
     </section>
     <div class="content">
         <h2>Split on Scroll</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quas libero, et, accusamus nisi obcaecati nihil aspernatur porro voluptates iste facilis quod debitis quis cum rerum minima provident? Maxime corporis optio repellendus a architecto saepe pariatur, dolorum impedit est facere sunt debitis doloribus quam non eaque voluptatibus nesciunt accusantium explicabo sed cupiditate magni. Itaque modi consectetur inventore perspiciatis rerum distinctio labore quaerat. Quisquam harum exercitationem ea fuga accusamus corrupti itaque quos molestias maxime, voluptatem quia eum quibusdam voluptatum ipsam adipisci minus, totam dignissimos iusto animi qui deleniti expedita. Magnam aliquid tempora eius nulla aut. Itaque nam debitis cum voluptas inventore ea, quia quibusdam, nisi consequatur distinctio voluptate error rerum nesciunt ipsa eos corrupti minima qui?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quas libero, et, accusamus nisi obcaecati
+            nihil aspernatur porro voluptates iste facilis quod debitis quis cum rerum minima provident? Maxime corporis
+            optio repellendus a architecto saepe pariatur, dolorum impedit est facere sunt debitis doloribus quam non
+            eaque voluptatibus nesciunt accusantium explicabo sed cupiditate magni. Itaque modi consectetur inventore
+            perspiciatis rerum distinctio labore quaerat. Quisquam harum exercitationem ea fuga accusamus corrupti
+            itaque quos molestias maxime, voluptatem quia eum quibusdam voluptatum ipsam adipisci minus, totam
+            dignissimos iusto animi qui deleniti expedita. Magnam aliquid tempora eius nulla aut. Itaque nam debitis cum
+            voluptas inventore ea, quia quibusdam, nisi consequatur distinctio voluptate error rerum nesciunt ipsa eos
+            corrupti minima qui?</p>
     </div>
 
     <script>
         let side1 = document.getElementById('side1');
         let side2 = document.getElementById('side2');
 
-        window.addEventListener('scroll', function(){
-            side1.style.left = -window.pageYOffset+'px';
-            side2.style.left = window.pageYOffset+'px';
+        window.addEventListener('scroll', function () {
+            side1.style.left = -window.pageYOffset + 'px';
+            side2.style.left = window.pageYOffset + 'px';
         })
     </script>
 </body>
+
 </html>
